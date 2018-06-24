@@ -497,11 +497,11 @@ service prepare_param /system/bin/prepare_param.sh /dev/block/platform/13540000.
     group root
     oneshot
 
-service gpsd /system/bin/gpsd
-    class main
-    user gps
-    group system inet wakelock
-    ioprio be 0
+#service gpsd /system/bin/gpsd
+#    class main
+#    user gps
+#    group system inet wakelock
+#    ioprio be 0
 
 service charger /charger
     class charger
