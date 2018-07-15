@@ -46,3 +46,5 @@ allow cpboot-daemon proc:file r_file_perms;
 set_prop(cpboot-daemon, cpboot-daemon_prop)
 set_prop(cpboot-daemon, radio_prop)
 set_prop(cpboot-daemon, system_prop)
+
+allow cpboot-daemon default_prop:property_service set;
